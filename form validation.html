@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Form Validation</title>
+       
+    </head>
+    <body>
+        
+        <p>What of car would you like to buy?</p>
+        <form>
+            <input type="radio" name="car1" >proton
+            <input type="radio" name="car1" value="pronton">Honda
+            <input type="radio" name="car1" value="pronton">Ferri
+            <input type="radio" name="car1" value="pronton">Ford
+        </form>
+        <p>What color do u want on your car?</P>
+        <form>
+            <select name="colours">
+                <option value="pink">pink</option>
+                 <option value="red">red</option>
+                  <option value="white">white</option>
+                   <option value="black">black</option>
+            </select>
+            other <input type="text" name="other"/><br/>
+            <p>Enter other specification for your preferred car:</p>
+            <textarea rows="10" cols="30"> </textarea>
+        </form>
+        <p>Tell us how to get in touch with u:</p>
+        <pre>
+            Name:      <input id:"name">
+
+            Telephone: <input id:"tele">
+
+            Email:     <input id="email">
+        </pre>
+        
+        <SCRIPT>
+            let text=document.getElementById("name");
+            let pattern=/[a-z]/i;
+            let result=pattern.test(text);
+            
+            text=document.getElementById("tele");
+            pattern=/[0-9]/;
+            result=pattern.test(text);
+            
+            text=document.getElementById("email");
+            pattern=/[@]/;
+            result=pattern.test(text);
+        </SCRIPT>
+        <form>
+            <input type="checkbox" name="box"/>Please contact me as soon as possible
+             <P>
+                <a href="mailto:aafharsh@gmail.com">My Mail:aafharsh@gmail.com</a>
+             </p>
+             
+             <input type="submit" value="submit"/> 
+              <input type="reset" value="clear"/>
+              <p>
+                  <a href="www.google.com">Back to mail page</a>
+              </p>
+        </form>
+   </body>
+</html>
